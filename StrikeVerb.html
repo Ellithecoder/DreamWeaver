@@ -13,10 +13,11 @@
     .Videos {
 }
     </style>
+  <script src="Scripts/swfobject_modified.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <img src="images/Logo.png" width="60" height="50" alt=""/>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,7 +47,7 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
-    </nav>
+  </nav>
     <div class="container mt-3">
       <div class="row">
         <div class="col-12">
@@ -188,36 +189,32 @@ A modal verb is a type of verb that contextually indicates a modality such as a 
         <div class="col-lg-4 col-12">
           <div class="row mx-0">
             <div class="col-12 card bg-light mx-auto">
-              <h3 class="text-center card-header">VERB ACTION</h3>
-              <form class="card-body">
-                <div class="form-group row">
-                  <label for="location1" class="col-form-label">Location</label>
-                  <select class="form-control" name="location" id="location1">
-                    <option value="">Any</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                  </select>
-                </div>
-                <div class="form-group row">
-                  <label for="pricefrom" class="col-form-label">Price From</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text" id="basic-addon1">$</div>
-                    </div>
-                    <input type="text" class="form-control" id="pricefrom" aria-describedby="basic-addon1">
+              <h3 class="text-center card-header">WORD ACTION</h3>
+              <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1920" height="1094" id="FlashID" title="WORD-ACTION">
+                <param name="movie" value="Word Action.swf">
+                <param name="quality" value="high">
+                <param name="wmode" value="opaque">
+                <param name="swfversion" value="6.0.65.0">
+                <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                <param name="expressinstall" value="Scripts/expressInstall.swf">
+                <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="Word Action.swf" width="1920" height="1094">
+                  <!--<![endif]-->
+                  <param name="quality" value="high">
+                  <param name="wmode" value="opaque">
+                  <param name="swfversion" value="6.0.65.0">
+                  <param name="expressinstall" value="Scripts/expressInstall.swf">
+                  <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                  <div>
+                    
+                    <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="275" height="33" /></a></p>
                   </div>
-                </div>
-                <div class="form-group row">
-                  <label for="priceto" class="col-form-label">Price To</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text" id="basic-addon2">$</div>
-                    </div>
-                    <input type="text" class="form-control" id="priceto" aria-describedby="basic-addon2">
-                  </div>
-                </div>
-                <p class="text-center"><a href="#" class="btn btn-danger" role="button">Search </a></p>
-              </form>
+                  <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+              </object>
+<p class="text-center"><a href="#" class="btn btn-danger" role="button">Search </a></p>
             </div>
             <div class="col-12">
               <h3 class="text-center">Developers</h3>
@@ -352,7 +349,7 @@ Gone are the days when students were helpless and distraught when it came to obt
             <abbr title="Phone">P:</abbr> (123) 456-7890
           </address>
           <address>
-            <strong>Strike Verb<br>
+            <strong>Strike Verb</strong>
             <a href="mailto:#">strike.verb@gmail.com</a>
           </address>
         </div>
@@ -372,5 +369,8 @@ Gone are the days when students were helpless and distraught when it came to obt
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.3.1.js"></script>
+  <script type="text/javascript">
+swfobject.registerObject("FlashID");
+    </script>
   </body>
 </html>
